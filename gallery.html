@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/newsletter.css">
+    <link rel="stylesheet" href="./styles/gallery.css">
+    <title>Reelviews</title>
+</head>
+<body>
+    <header class="banner">
+        <div class="topbar">
+            <a href="./index.html"><img src="img/reelviews.svg" alt="reelviews logo"></a>
+            <ul class="nav-links">
+                <li><a href="#"><strong>Actors</strong></a></li>
+                <li><a href="./directors.html"><strong>Directors</strong></a></li>
+                <li><a href="./blog.html"><strong>Blog</strong></a></li>
+                <li><a href="./gallery.html"><strong>Gallery</strong></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="gallery-wrapper">
+        <div id="gallery" class="gallery-grid">
+            <!-- Images will be dynamically inserted here -->
+        </div>
+    </div>  
+
+    <br>
+
+    <hr style="border-top: 2px solid black;">
+
+    <br>
+
+    <div class="articletitle">
+        <h2 class="spotarticles">Spotlit Actors</h2>
+    </div>
+
+    <br> 
+
+    <section class="articles">
+        <div class="card">
+            <div class="buttontext">
+                <h4>Jerome in <em>'When They See Us'</em></h4>
+            </div>
+            <img src="img/jharrel.webp" alt="jharrel jerome">
+        </div>
+        <div class="card">
+            <div class="buttontext">
+                <h4>Pugh in <em>Midsommar</em></h4>
+            </div>
+            <img src="img/florence.webp" alt="florence pugh">
+        </div>
+        <div class="card">
+            <div class="buttontext">
+                <h4>Ahmed in <em>Sound of Metal</em></h4>
+            </div>
+            <img src="img/riz.webp" alt="riz ahmed">
+        </div>
+    </section>
+    
+    <br>
+    <div class="newsletter">
+        <h4>Subscribe to our Newsletter</h4>
+        <div class="signup">
+            <form id="newsletterForm">
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+    </div>  
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modalMessage"></p>
+        </div>
+    </div>
+    <footer>
+      <p> © Kesh Mohesh, 2024 </p>
+    </footer>
+    <script src="./newsletter.js"></script>
+    <script src="./gallery.js"></script>
+</body>
+</html>
