@@ -74,10 +74,4 @@ window.addEventListener("load", first_load);
 prev_btn.addEventListener("click", set_nav_prev);
 next_btn.addEventListener("click", set_nav_next);
 
-// New code to advance slide on outside click
-document.addEventListener("click", (event) => {
-    const carousel = document.querySelector(".carousel");
-    if (!carousel.contains(event.target) && !event.target.closest('.prev') && !event.target.closest('.next')) {
-        set_nav_next();
-    }
-});
+
